@@ -1,19 +1,31 @@
-# teachica
+# Teachica
 
 A new Flutter project.
-update the .env and android/app/src/main/res/values/strings.xml files with your credentials
 
-in the auth0 dashboard you need to update
+## Setup Instructions
 
-Allowed Callback URLs
-demo://'domain'/android/com.example.flutter_auth0/callback
-or your schema doesn't have to be demo://
+### 1. Update Configuration Files
+- **`.env` file**: Add your credentials.
+- **`android/app/src/main/res/values/strings.xml` file**: Update with your credentials.
 
-allowed logout
-demo://'domain'/android/com.example.flutter_auth0/callback
+### 2. Auth0 Dashboard Configuration
 
-allow cross origin authentication and update allowed origins(cors) with your domain
-demo://'domain'/android/com.example.flutter_auth0/callback
+- **Allowed Callback URLs**:
+`demo://your-domain/android/com.example.flutter_auth0/callback`
+(Note: Your schema doesn't have to be `demo://`)
 
-thats it you are good to go
-```
+- **Allowed Logout URLs**:
+`demo://your-domain/android/com.example.flutter_auth0/callback`
+
+- **Cross-Origin Authentication**:
+- Allow cross-origin authentication.
+- Update Allowed Origins (CORS) with your domain:
+  ```
+  demo://your-domain/android/com.example.flutter_auth0/callback
+  ```
+
+### That's it! You are good to go.
+
+
+
+
